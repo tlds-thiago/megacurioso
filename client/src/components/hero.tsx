@@ -10,9 +10,12 @@ export default function Hero() {
 
   return (
     <section id="home" className="pt-16">
-      {/* Hero Banner */}
-      <div className="relative bg-gradient-to-r from-primary to-blue-600 text-white">
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      {/* Hero Banner com imagem de fundo */}
+      <div 
+        className="relative text-white bg-cover bg-center"
+        style={{ backgroundImage: "url('/hero-banner.png')" }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
