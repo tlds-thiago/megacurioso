@@ -1,0 +1,42 @@
+Crie um blog completo em HTML, CSS e JavaScript chamado "Mundo Curioso" que publique artigos de curiosidades sobre o mundo (históricas, científicas, geográficas, culturais etc). O site deve seguir os seguintes requisitos:
+
+1. Design responsivo e elegante:
+   - Visual moderno e minimalista;
+   - Layout limpo e com excelente legibilidade;
+   - Suporte total a smartphones e computadores;
+   - Tipografia confortável, espaçamento generoso e cores suaves para não cansar os olhos;
+   - Menu fixo no topo com links para "Início", "Curiosidades", "Sobre", "Contato".
+
+2. Estrutura do blog:
+   - Página inicial com uma grade de artigos com imagens destacadas, título e breve resumo;
+   - Cada artigo em uma página individual com destaque para o título, data, autor e texto corrido bem formatado;
+   - Rodapé com links úteis, redes sociais e aviso de copyright.
+
+3. Google AdSense:
+   - Incluir este script no corpo de todas as páginas:
+     ```html
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7053654011284998"
+     crossorigin="anonymous"></script>
+     ```
+   - Adicionar pelo menos **um bloco de anúncio responsivo** no início e/ou no meio dos artigos.
+   - O site deve estar pronto para **inclusão de anúncios** e em conformidade com as [diretrizes do Google AdSense](https://support.google.com/adsense/answer/48182?hl=pt-BR).
+
+4. SEO e compatibilidade:
+   - O site deve ter boas práticas de SEO (título, meta tags, uso de `<article>`, `<section>`, `<nav>`, etc.);
+   - Criar um arquivo `ads.txt` com o conteúdo:
+     ```
+     google.com, pub-7053654011284998, DIRECT, f08c47fec0942fa0
+     ```
+     E deixar disponível na raiz do projeto para ser encontrado pelo AdSense.
+
+5. Conteúdo de exemplo:
+   - Incluir pelo menos 3 posts de curiosidades do mundo com títulos chamativos e texto realista, como:
+     - "A cidade submersa de Atlântida: mito ou realidade?"
+     - "Por que os flamingos são rosas?"
+     - "A floresta que cresce dentro de um vulcão ativo"
+
+6. Código organizado:
+   - Estruturar os arquivos em pastas (`/css`, `/js`, `/img`, etc.);
+   - Usar HTML5 semântico;
+   - CSS separado para facilitar a manutenção;
+   - JS opcional para interações básicas (menu mobile, rolagem suave, etc).
