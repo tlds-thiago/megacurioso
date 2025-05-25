@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 248 250 252; /* #F8FAFC */
+  --foreground: 30 41 59; /* #1E293B */
+  --muted: 241 245 249; /* #F1F5F9 */
+  --muted-foreground: 148 163 184; /* #94A3B8 */
+  --popover: 255 255 255; /* #FFFFFF */
+  --popover-foreground: 30 41 59; /* #1E293B */
+  --card: 255 255 255; /* #FFFFFF */
+  --card-foreground: 30 41 59; /* #1E293B */
+  --border: 226 232 240; /* #E2E8F0 */
+  --input: 226 232 240; /* #E2E8F0 */
+  --primary: 37 99 235; /* #2563EB */
+  --primary-foreground: 255 255 255; /* #FFFFFF */
+  --secondary: 241 245 249; /* #F1F5F9 */
+  --secondary-foreground: 30 41 59; /* #1E293B */
+  --accent: 245 158 11; /* #F59E0B */
+  --accent-foreground: 255 255 255; /* #FFFFFF */
+  --destructive: 239 68 68; /* #EF4444 */
+  --destructive-foreground: 255 255 255; /* #FFFFFF */
+  --ring: 37 99 235; /* #2563EB */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 15 23 42; /* #0F172A */
+  --foreground: 248 250 252; /* #F8FAFC */
+  --muted: 30 41 59; /* #1E293B */
+  --muted-foreground: 148 163 184; /* #94A3B8 */
+  --popover: 15 23 42; /* #0F172A */
+  --popover-foreground: 248 250 252; /* #F8FAFC */
+  --card: 15 23 42; /* #0F172A */
+  --card-foreground: 248 250 252; /* #F8FAFC */
+  --border: 30 41 59; /* #1E293B */
+  --input: 30 41 59; /* #1E293B */
+  --primary: 37 99 235; /* #2563EB */
+  --primary-foreground: 255 255 255; /* #FFFFFF */
+  --secondary: 30 41 59; /* #1E293B */
+  --secondary-foreground: 248 250 252; /* #F8FAFC */
+  --accent: 245 158 11; /* #F59E0B */
+  --accent-foreground: 15 23 42; /* #0F172A */
+  --destructive: 239 68 68; /* #EF4444 */
+  --destructive-foreground: 248 250 252; /* #F8FAFC */
+  --ring: 37 99 235; /* #2563EB */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .nav-blur {
+    backdrop-filter: blur(10px);
+    background-color: rgba(248, 250, 252, 0.8);
+  }
+  
+  .article-card {
+    transition: all 0.3s ease;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-4px);
+  }
+
+  /* AdSense responsive container */
+  .adsense-container {
+    @apply w-full text-center my-8;
+  }
+
+  .adsense-container ins {
+    @apply block;
+  }
+}
+
+/* Article content styling */
+.article-content {
+  @apply prose prose-lg max-w-none;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  @apply text-foreground font-semibold;
+}
+
+.article-content p {
+  @apply text-muted-foreground leading-relaxed mb-4;
+}
+
+.article-content ul,
+.article-content ol {
+  @apply text-muted-foreground ml-6 mb-4;
+}
+
+.article-content li {
+  @apply mb-2;
+}
+
+.article-content a {
+  @apply text-primary hover:text-primary/80 underline;
+}
